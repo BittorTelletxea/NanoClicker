@@ -4,9 +4,9 @@ class Motor extends Hobekuntzak {
 
         this.izena = "Motorra";
         this.kopurua = 0;
-        this.ekoizpena = 0;
-        this.kostua = 0;
-        this.kostuMarginal = 0;
+        this.ekoizpena = 1000;
+        this.kostua = 30000;
+        this.kostuMarginal = 1.6;
 
     }
 
