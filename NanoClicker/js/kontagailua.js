@@ -1,22 +1,16 @@
 class Kontagailua {
 
     constructor () {
-
         this.kontagailua = 0;
-        this.hobekuntza = new Hobekuntzak();
-
     }
 
     nanoClickGehitu() {
-
         this.kontagailua++;
-
+        point.innerHTML=this.kontagailua;
     }
 
-    nanoHobekuntzaGehitu() {
-
-        this.hobekuntza
-
+    nanohobekuntzaGehitu() {
+        
     }
 
 

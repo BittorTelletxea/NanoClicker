@@ -1,19 +1,11 @@
-var kontagailua = document.getElementById("") 
-new Kontagailua();
-var atzekoAleroia = document.getElementById("atzekoAleroia");
-var aurrekoAleroia = document.getElementById("aurrekoAleroia");
-var drs = document.getElementById("drs");
-var ruedas = document.getElementById("ruedas");
-var kotxea = document.getElementById("kotxea");
-var motor = document.getElementById("motorra");
+var kontagailu = new Kontagailua();
 
 
-
-kontagailua.addEventListener('click', function() {
-    kontagailua.nanoClickGehitu();
+nan.addEventListener('click', function() {
+    kontagailu.nanoClickGehitu();
 });
 
-atzekoAleroia.addEventListener('click', function(){
+/*atzekoAleroia.addEventListener('click', function(){
     atzekoAleroia.gehituAbiadura();
 });
 
@@ -25,6 +17,8 @@ drs.addEventListener('click', function(){
     drs.gehituAbiadura();
 });
 
+
+*/
 
 
 
