@@ -1,4 +1,4 @@
-class atzekoAleroia extends Hobekuntzak {
+class atzekoAleroia  {
 
     constructor () {
 

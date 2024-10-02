@@ -1,12 +1,13 @@
 var kontagailu = new Kontagailua();
+var atzakoAle = new atzekoAleroia();
 
 
 nan.addEventListener('click', function() {
     kontagailu.nanoClickGehitu();
 });
 
-/*atzekoAleroia.addEventListener('click', function(){
-    atzekoAleroia.gehituAbiadura();
+atzekoAler.addEventListener('click', function(){
+    kontagailu.atzekoAleroia();
 });
 
 aurrekoAleroia.addEventListener('click', function(){
@@ -18,7 +19,7 @@ drs.addEventListener('click', function(){
 });
 
 
-*/
+
 
 
 
