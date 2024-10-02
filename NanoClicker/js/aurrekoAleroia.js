@@ -1,4 +1,4 @@
-class aurrekoAleroia extends Hobekuntzak {
+class AurrekoAleroia extends Hobekuntzak {
 
     constructor () {
 
@@ -7,7 +7,7 @@ class aurrekoAleroia extends Hobekuntzak {
         this.ekoizpena = 20;
         this.kostua = 100;
         this.kostuMarginal = 1.3;
-        
+
     }
 
 }

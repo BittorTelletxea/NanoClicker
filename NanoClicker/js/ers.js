@@ -7,6 +7,6 @@ class Ers extends Hobekuntzak {
         this.ekoizpena = 350;
         this.kostua = 5000;
         this.kostuMarginal = 1.45;
-        
+
     }
 }

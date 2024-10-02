@@ -1,4 +1,4 @@
-class atzekoAleroia extends Hobekuntzak {
+class AtzekoAleroia extends Hobekuntzak {
 
     constructor () {
 
@@ -7,6 +7,6 @@ class atzekoAleroia extends Hobekuntzak {
         this.ekoizpena = 5;
         this.kostua = 30;
         this.kostuMarginal = 1.2;
-        
+
     }
 }
