@@ -46,6 +46,12 @@ ersElement.addEventListener('click', function() {
 motorraElement.addEventListener('click', function() {
     kontagailu.motor();
 });
+drsElement.addEventListener('click', function() {
+    kontagailu.drs();
+});
+kotxeaElement.addEventListener('click', function() {
+    kontagailu.kotxea();
+});
 
 
 
