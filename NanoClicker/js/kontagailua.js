@@ -18,8 +18,8 @@ class Kontagailua {
         var atzeko = new AtzekoAleroia();
         var ekoizpena = atzeko.ekoizpena;
         var balorea=0;
-        if(document.getElementById("multiplicador").value){
-            balorea = document.getElementById("multiplicador").value;
+        if(document.getElementById("multiplicador").innerHTML){
+            balorea = parseInt(document.getElementById("multiplicador").innerHTML) ;
         }else{
             balorea = 0;
         }
@@ -33,7 +33,57 @@ class Kontagailua {
         }
 
         this.atzekoInterval = setInterval(() => {
-            this.kontagailua += ekoizpena;
+            this.kontagailua += osoa;
+            
+            document.getElementById("point").innerHTML = this.kontagailua;
+        }, 1000); 
+    }
+
+    drs(){
+        var drs = new Drs();
+        var ekoizpena = drs.ekoizpena;
+        var balorea=0;
+        if(document.getElementById("multiplicador").innerHTML){
+            balorea = parseInt(document.getElementById("multiplicador").innerHTML) ;
+        }else{
+            balorea = 0;
+        }
+        var osoa = balorea+ekoizpena;
+        document.getElementById("multiplicador").innerHTML = osoa;
+        this.kontagailua = this.kontagailua - ekoizpena;
+        point.innerHTML = this.kontagailua;
+        
+        if (this.drsInterval !== null) {
+            clearInterval(this.drsInterval);
+        }
+
+        this.drsInterval = setInterval(() => {
+            this.kontagailua += osoa;
+            
+            document.getElementById("point").innerHTML = this.kontagailua;
+        }, 1000); 
+    }
+
+    kotxea(){
+        var kotxea = new Kotxea();
+        var ekoizpena = kotxea.ekoizpena;
+        var balorea=0;
+        if(document.getElementById("multiplicador").innerHTML){
+            balorea = parseInt(document.getElementById("multiplicador").innerHTML) ;
+        }else{
+            balorea = 0;
+        }
+        var osoa = balorea+ekoizpena;
+        document.getElementById("multiplicador").innerHTML = osoa;
+        this.kontagailua = this.kontagailua - ekoizpena;
+        point.innerHTML = this.kontagailua;
+        
+        if (this.kotxeaInterval !== null) {
+            clearInterval(this.kotxeaInterval);
+        }
+
+        this.kotxeaInterval = setInterval(() => {
+            this.kontagailua += osoa;
             
             document.getElementById("point").innerHTML = this.kontagailua;
         }, 1000); 

@@ -25,14 +25,19 @@ nan.addEventListener('click', function() {
 atzekoAleroia.addEventListener('click', function() {
     kontagailu.atzekoAleroia();
 });
+drs.addEventListener('click', function() {
+    kontagailu.drs();
+});
+
+kotxea.addEventListener('click', function() {
+    kontagailu.kotxea();
+});
 
 /*aurrekoAleroia.addEventListener('click', function() {
     aurrekoAlero.hobekuntza_erosi();
 });
 
-drs.addEventListener('click', function() {
-    drsa.hobekuntza_erosi();
-});
+
 
 ruedas.addEventListener('click', function() {
     errueda.hobekuntza_erosi();
