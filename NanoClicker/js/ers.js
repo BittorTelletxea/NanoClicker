@@ -1,7 +1,7 @@
 class Ers /*extends Hobekuntzak*/ {
     
     constructor () {
-
+        super();
         this.izena = "ERS";
         this.kopurua = 0;
         this.ekoizpena = 350;

@@ -1,6 +1,7 @@
 class Kontagailua {
 
     constructor () {
+
         this.kontagailua = 0;
     }
 
