@@ -1,7 +1,6 @@
-class Drs extends Hobekuntzak {
+class Drs/* extends Hobekuntzak*/ {
     
     constructor (element) {
-        super();
         this.izena = "DRS";
         this.kopurua = 0;
         this.ekoizpena = 50;

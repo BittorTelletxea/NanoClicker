@@ -1,7 +1,6 @@
-class AtzekoAleroia extends Hobekuntzak {
+class AtzekoAleroia/* extends Hobekuntzak*/ {
 
     constructor (element) {
-        super();
         this.izena = "Atzeko aleroia";
         this.kopurua = 0;
         this.ekoizpena = 5;
