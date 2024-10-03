@@ -1,59 +1,57 @@
 
 
 var kontagailu = new Kontagailua();
-var atzekoAlero = new AtzekoAleroia();
-var aurrekoAlero = new AurrekoAleroia();
-var drsa = new Drs();
-var errueda = new Erruedak();
-var ersa = new Ers();
-var kotxe = new Kotxea();
-var motorra = new Motor(); 
-var hobekuntzak =  [kontagailu, atzekoAlero, aurrekoAlero, drsa, errueda, ersa, kotxe, motorra];
+var atzekoAlero = new AtzekoAleroia(atzekoAleroiaElement);
+var aurrekoAlero = new AurrekoAleroia(aurrekoAleroiaElement);
+var drsa = new Drs(drsElement);
+var errueda = new Erruedak(ruedasElement);
+var ersa = new Ers(ersElement);
+var kotxe = new Kotxea(kotxeaElement);
+var motor = new Motor(motorraElement); 
+var hobekuntzak =  [atzekoAlero, aurrekoAlero, drsa, errueda, ersa, kotxe, motor];
 
 nan.addEventListener('click', function() {
     kontagailu.nanoClickGehitu();
 });
 
-/*for (let i=0; hobekuntzak.length > i; i++) {
-    if (hobekuntzak[i].kostua < kontagailu.kontagailua) {
-        hobekuntzak[i].style.opacity = 1;
-    } else {
-        hobekuntzak[i].style.opacity = 0.3;
+setInterval(function() {
+    hobekuntzakOpacity();
+}, 100); 
+
+function hobekuntzakOpacity() {
+    for (let i = 0; i < hobekuntzak.length; i++) {
+        if (hobekuntzak[i].kostua < kontagailu.kontagailua) {
+            hobekuntzak[i].element.style.opacity = 1;
+            hobekuntzak[i].element.style.pointerEvents = "auto";
+        } else {
+            hobekuntzak[i].element.style.opacity = 0.3;
+            hobekuntzak[i].element.style.pointerEvents = "none";
+        }
     }
 }
-*/
-atzekoAleroia.addEventListener('click', function() {
+
+
+atzekoAleroiaElement.addEventListener('click', function() {
     kontagailu.atzekoAleroia();
 });
-drs.addEventListener('click', function() {
+aurrekoAleroiaElement.addEventListener('click', function(){
+    kontagailu.aurrekoAleroia();
+});
+ruedasElement.addEventListener('click', function(){
+    kontagailu.ruedas();
+})
+ersElement.addEventListener('click', function() {
+    kontagailu.ers();
+});
+motorraElement.addEventListener('click', function() {
+    kontagailu.motor();
+});
+drsElement.addEventListener('click', function() {
     kontagailu.drs();
 });
-
-kotxea.addEventListener('click', function() {
+kotxeaElement.addEventListener('click', function() {
     kontagailu.kotxea();
 });
-
-/*aurrekoAleroia.addEventListener('click', function() {
-    aurrekoAlero.hobekuntza_erosi();
-});
-
-
-
-ruedas.addEventListener('click', function() {
-    errueda.hobekuntza_erosi();
-});
-
-ers.addEventListener('click', function() {
-    ersa.hobekuntza_erosi();
-});
-
-kotxea.addEventListener('click', function() {
-    kotxe.hobekuntza_erosi();
-});
-
-motor.addEventListener('click', function() {
-    motorra.hobekuntza_erosi();
-});*/
 
 
 
