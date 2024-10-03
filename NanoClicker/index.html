@@ -3,52 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cookie Clicker</title>
     <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <div class="container">
         <div class="derecha">
             <div class="puntos">
-                <h3>Puntos: </h3>
+                <span id="point">0</span>
             </div>
             <div class="puntosPorSegundo">
-                <h3>Puntos por segundo: </h3>
-                <div id="multiplicador"></div><br><br>
-                <div id="point"></div>
+                <h3>Puntos por segundo:</h3>
+                <div id="multiplicador">0</div>
             </div>
-
         </div>
+        
         <div id="nano-container">
-            <p id="nan"><img  src="img/file-removebg-preview.png" width="100%" alt=""></p>
+            <p id="nan"><img src="img/file-removebg-preview.png" alt="Clicker"></p>
         </div>
 
         <div class="izquierda">
             <div class="store">
                 <h3>Tienda de mejoras por click</h3>
                 <ul class="store-item">
-                    <li>click doble</li>
-                    <li>click doble</li>
-                    <li>click doble</li>
+                    <li id="doble">Click doble</li>
+                    <li>Click triple</li>
+                    <li>Click cuádruple</li>
                 </ul>
             </div>
             <div class="mejorasPS">
                 <h3>Tienda de mejoras por segundo</h3>
                 <ul class="mejorasPS-item">
-                    <li id="atzekoAleroiaElement">Atzeko aleroia</li>
+                    <li id="atzekoAleroiaElement">Atzeko aleroia </li>
                     <li id="aurrekoAleroiaElement">Aurreko Aleroia</li>
-                    <li id="drsElement">drs</li>
-                    <li id="ruedasElement">ruedas</li>
-                    <li id="ersElement">ers</li>
-                    <li id="kotxeaElement">kotxea</li>
-                    <li id="motorraElement">motorra</li>
+                    <li id="drsElement">DRS</li>
+                    <li id="ruedasElement">Ruedas</li>
+                    <li id="ersElement">ERS</li>
+                    <li id="kotxeaElement">Kotxea</li>
+                    <li id="motorraElement">Motorra</li>
                 </ul>
             </div>
         </div>
 
     </div>
-    
 </body>
 <script src="js/kontagailua.js"></script>
 <script src="js/hobekuntzak.js"></script>
@@ -59,8 +57,5 @@
 <script src="js/ers.js"></script>
 <script src="js/kotxea.js"></script>
 <script src="js/motor.js"></script>
-<script src="js/script.js"></script> <!-- Último, porque depende de todos los anteriores -->
-
-
+<script src="js/script.js"></script>
 </html>
-
