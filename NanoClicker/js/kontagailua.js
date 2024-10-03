@@ -26,6 +26,7 @@ class Kontagailua {
         var osoa = balorea+ekoizpena;
         document.getElementById("multiplicador").innerHTML = osoa;
         this.kontagailua = this.kontagailua - ekoizpena;
+        this.kostua *= 1.2;
         point.innerHTML = this.kontagailua;
         
         if (this.atzekoInterval !== null) {
@@ -51,6 +52,7 @@ class Kontagailua {
         var osoa = balorea+ekoizpena;
         document.getElementById("multiplicador").innerHTML = osoa;
         this.kontagailua = this.kontagailua - ekoizpena;
+        
         point.innerHTML = this.kontagailua;
         
         if (this.drsInterval !== null) {

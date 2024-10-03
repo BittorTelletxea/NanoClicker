@@ -1,4 +1,4 @@
-class Drs/* extends Hobekuntzak*/ {
+class Drs {
     
     constructor (element) {
         this.izena = "DRS";

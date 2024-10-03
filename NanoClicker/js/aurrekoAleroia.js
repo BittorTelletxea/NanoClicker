@@ -1,4 +1,4 @@
-class AurrekoAleroia /*extends Hobekuntzak*/ {
+class AurrekoAleroia {
 
     constructor (element) {
         this.izena = "Aurreko aleroia";

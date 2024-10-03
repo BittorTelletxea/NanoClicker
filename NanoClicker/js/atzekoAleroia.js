@@ -1,4 +1,4 @@
-class AtzekoAleroia/* extends Hobekuntzak*/ {
+class AtzekoAleroia {
 
     constructor (element) {
         this.izena = "Atzeko aleroia";

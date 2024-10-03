@@ -1,4 +1,4 @@
-class Motor /*extends Hobekuntzak*/ {
+class Motor {
 
     constructor (element) {
         this.izena = "Motorra";

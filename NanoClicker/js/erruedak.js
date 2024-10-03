@@ -1,4 +1,4 @@
-class Erruedak /*extends Hobekuntzak*/ {
+class Erruedak {
     
     constructor (element) {
         this.izena = "Erruedak";

@@ -20,6 +20,7 @@ setInterval(function() {
 
 function hobekuntzakOpacity() {
     for (let i = 0; i < hobekuntzak.length; i++) {
+        console.log(hobekuntzak[i].kostua);
         if (hobekuntzak[i].kostua < kontagailu.kontagailua) {
             hobekuntzak[i].element.style.opacity = 1;
             hobekuntzak[i].element.style.pointerEvents = "auto";
