@@ -1,21 +1,21 @@
 class Kontagailua {
     constructor() {
-        this.kontagailua = 0; // Contador principal
-        this.ekintza = 0; // Variable para guardar el incremento de mejoras
+        this.kontagailua = 0; 
+        this.ekintza = 0; 
     }
 
     nanoClickGehitu() {
         this.kontagailua++;
-        point.innerHTML = this.kontagailua; // Actualizamos el contador en el HTML
+        point.innerHTML = this.kontagailua; 
     }
 
     nanohobekuntzaGehitu(hobekuntza) {
         var hobekuntzak = new Hobekuntzak(); 
-        hobekuntzak.hobekuntzakErosi(hobekuntza, this); // Pasamos `this` para mantener la referencia correcta
+        hobekuntzak.hobekuntzakErosi(hobekuntza, this); 
     }
 
     actualizarKontagailua(ekintza) {
-        this.kontagailua += ekintza; // Actualiza el contador con el incremento de la mejora
-        point.innerHTML = this.kontagailua; // Actualiza el HTML
+        this.kontagailua += ekintza; 
+        point.innerHTML = this.kontagailua; 
     }
 }

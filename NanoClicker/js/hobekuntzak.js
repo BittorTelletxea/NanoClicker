@@ -6,14 +6,14 @@ class Hobekuntzak {
         if (HobekuntzaClass) {
             var atzeko = new HobekuntzaClass();
             var ekoizpena = atzeko.ekoizpena;
-            thisK.kontagailua -= atzeko.kostua; // Resta el costo
-            point.innerHTML = thisK.kontagailua; // Actualiza el HTML
-                // Acumula el valor de las mejoras
+            thisK.kontagailua -= atzeko.kostua; 
+            point.innerHTML = thisK.kontagailua; 
+               
             thisK.ekintza += ekoizpena;
             multiplicador.innerHTML = thisK.ekintza;
-                // Iniciamos un nuevo intervalo
+                
             this.atzekoInterval = setInterval(() => {
-                thisK.actualizarKontagailua(thisK.ekintza); // Aumenta el contador
+                thisK.actualizarKontagailua(thisK.ekintza); 
             }, 1000);
            
         } else {
