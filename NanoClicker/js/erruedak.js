@@ -1,7 +1,7 @@
 class Erruedak extends Hobekuntzak {
     
     constructor () {
-
+        super();
         this.izena = "Erruedak";
         this.kopurua = 0;
         this.ekoizpena = 100;

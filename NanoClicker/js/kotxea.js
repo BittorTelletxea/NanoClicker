@@ -1,7 +1,7 @@
 class Kotxea extends Hobekuntzak {
     
     constructor () {
-
+        super();
         this.izena = "Kotxea";
         this.kopurua = 0;
         this.ekoizpena = 620;
