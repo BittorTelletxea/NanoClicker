@@ -1,6 +1,7 @@
-class Motor {
+class Motor extends Hobekuntzak {
 
     constructor (element) {
+        super();
         this.izena = "Motorra";
         this.kopurua = 0;
         this.ekoizpena = 1000;

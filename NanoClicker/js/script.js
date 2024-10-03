@@ -20,8 +20,8 @@ setInterval(function() {
 
 function hobekuntzakOpacity() {
     for (let i = 0; i < hobekuntzak.length; i++) {
-        console.log(hobekuntzak[i].kostua);
-        if (hobekuntzak[i].kostua < kontagailu.kontagailua) {
+        //console.log(hobekuntzak[i].kostua);
+        if (hobekuntzak[i].kostua <= kontagailu.kontagailua) {
             hobekuntzak[i].element.style.opacity = 1;
             hobekuntzak[i].element.style.pointerEvents = "auto";
         } else {
@@ -33,25 +33,25 @@ function hobekuntzakOpacity() {
 
 
 atzekoAleroiaElement.addEventListener('click', function() {
-    kontagailu.atzekoAleroia();
+    kontagailu.nanohobekuntzaGehitu("atzekoAleroia");
 });
 aurrekoAleroiaElement.addEventListener('click', function(){
-    kontagailu.aurrekoAleroia();
+    kontagailu.nanohobekuntzaGehitu("aurrekoAleroia");
 });
 ruedasElement.addEventListener('click', function(){
-    kontagailu.ruedas();
+    kontagailu.nanohobekuntzaGehitu("gurpila");
 })
 ersElement.addEventListener('click', function() {
-    kontagailu.ers();
+    kontagailu.nanohobekuntzaGehitu("ers");
 });
 motorraElement.addEventListener('click', function() {
-    kontagailu.motor();
+    kontagailu.nanohobekuntzaGehitu("motorra");
 });
 drsElement.addEventListener('click', function() {
-    kontagailu.drs();
+    kontagailu.nanohobekuntzaGehitu("drs");
 });
 kotxeaElement.addEventListener('click', function() {
-    kontagailu.kotxea();
+    kontagailu.knanohobekuntzaGehitu("kotxea");
 });
 
 

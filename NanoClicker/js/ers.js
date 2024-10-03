@@ -1,7 +1,7 @@
-class Ers {
+class Ers extends Hobekuntzak {
     
     constructor (element) {
-       
+        super();
         this.izena = "ERS";
         this.kopurua = 0;
         this.ekoizpena = 350;
