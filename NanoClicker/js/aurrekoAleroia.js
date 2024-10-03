@@ -1,4 +1,4 @@
-class AurrekoAleroia extends Hobekuntzak {
+class AurrekoAleroia /*extends Hobekuntzak*/ {
 
     constructor () {
 

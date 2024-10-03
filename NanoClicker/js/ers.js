@@ -1,4 +1,4 @@
-class Ers extends Hobekuntzak {
+class Ers /*extends Hobekuntzak*/ {
     
     constructor () {
 

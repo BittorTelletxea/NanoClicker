@@ -1,3 +1,5 @@
+
+
 var kontagailu = new Kontagailua();
 var atzekoAlero = new AtzekoAleroia();
 var aurrekoAlero = new AurrekoAleroia();
@@ -12,19 +14,19 @@ nan.addEventListener('click', function() {
     kontagailu.nanoClickGehitu();
 });
 
-for (let i=0; hobekuntzak.length > i; i++) {
+/*for (let i=0; hobekuntzak.length > i; i++) {
     if (hobekuntzak[i].kostua < kontagailu.kontagailua) {
         hobekuntzak[i].style.opacity = 1;
     } else {
         hobekuntzak[i].style.opacity = 0.3;
     }
 }
-
+*/
 atzekoAleroia.addEventListener('click', function() {
-    atzekoAlero.hobekuntza_erosi();
+    kontagailu.atzekoAleroia();
 });
 
-aurrekoAleroia.addEventListener('click', function() {
+/*aurrekoAleroia.addEventListener('click', function() {
     aurrekoAlero.hobekuntza_erosi();
 });
 
@@ -46,7 +48,7 @@ kotxea.addEventListener('click', function() {
 
 motor.addEventListener('click', function() {
     motorra.hobekuntza_erosi();
-});
+});*/
 
 
 

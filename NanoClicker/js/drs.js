@@ -1,4 +1,4 @@
-class Drs extends Hobekuntzak {
+class Drs/* extends Hobekuntzak*/ {
     
     constructor () {
 

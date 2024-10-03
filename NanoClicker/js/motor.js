@@ -1,4 +1,4 @@
-class Motor extends Hobekuntzak {
+class Motor /*extends Hobekuntzak*/ {
 
     constructor () {
 

@@ -1,4 +1,4 @@
-class Kotxea extends Hobekuntzak {
+class Kotxea /*extends Hobekuntzak*/ {
     
     constructor () {
 
