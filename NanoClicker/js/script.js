@@ -25,7 +25,12 @@ nan.addEventListener('click', function() {
 atzekoAleroia.addEventListener('click', function() {
     kontagailu.atzekoAleroia();
 });
-
+aurrekoAleroia.addEventListener('click', function(){
+    kontagailu.aurrekoAleroia();
+});
+ruedas.addEventListener('click', function(){
+    kontagailu.ruedas();
+})
 /*aurrekoAleroia.addEventListener('click', function() {
     aurrekoAlero.hobekuntza_erosi();
 });
@@ -36,19 +41,20 @@ drs.addEventListener('click', function() {
 
 ruedas.addEventListener('click', function() {
     errueda.hobekuntza_erosi();
-});
+});*/
 
 ers.addEventListener('click', function() {
-    ersa.hobekuntza_erosi();
+    kontagailu.ers();
+});
+document.getElementById("motorra").addEventListener('click', function() {
+    kontagailu.motor();
 });
 
-kotxea.addEventListener('click', function() {
+/*kotxea.addEventListener('click', function() {
     kotxe.hobekuntza_erosi();
-});
-
-motor.addEventListener('click', function() {
-    motorra.hobekuntza_erosi();
 });*/
+
+
 
 
 
