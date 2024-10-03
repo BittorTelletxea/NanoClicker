@@ -32,26 +32,18 @@ function hobekuntzakOpacity() {
 
 
 atzekoAleroiaElement.addEventListener('click', function() {
-    atzekoAlero.hobekuntza_erosi();
+    kontagailu.atzekoAleroia();
 });
-aurrekoAleroia.addEventListener('click', function(){
+aurrekoAleroiaElement.addEventListener('click', function(){
     kontagailu.aurrekoAleroia();
 });
-ruedas.addEventListener('click', function(){
+ruedasElement.addEventListener('click', function(){
     kontagailu.ruedas();
 })
-
-
-
-
-
-ers.addEventListener('click', function() {
+ersElement.addEventListener('click', function() {
     kontagailu.ers();
 });
-
-
-
-motor.addEventListener('click', function() {
+motorraElement.addEventListener('click', function() {
     kontagailu.motor();
 });
 
