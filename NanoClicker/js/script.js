@@ -1,5 +1,3 @@
-
-
 var kontagailu = new Kontagailua();
 var atzekoAlero = new AtzekoAleroia(atzekoAleroiaElement);
 var aurrekoAlero = new AurrekoAleroia(aurrekoAleroiaElement);

@@ -10,7 +10,6 @@ class Kontagailua {
         point.innerHTML = this.kontagailua; 
     }
 
-    // Modificado para recibir directamente la instancia de la mejora
     nanohobekuntzaGehitu(hobekuntzaObj) {
         if (hobekuntzaObj) {
             var hobekuntzakClass = new Hobekuntzak(); 
