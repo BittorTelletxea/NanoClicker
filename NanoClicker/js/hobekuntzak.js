@@ -1,40 +1,33 @@
-
 class Hobekuntzak {
-    hobekuntzakErosi(hobekuntza, thisK) {
-        var HobekuntzaClass = this.ze_hobekuntza_da(hobekuntza);
-
-        if (HobekuntzaClass) {
-            var atzeko = new HobekuntzaClass();
-            var ekoizpena = atzeko.ekoizpena;
-            thisK.kontagailua -= atzeko.kostua; 
+    hobekuntzakErosi(hobekuntzaObj, thisK) {
+        // Verificar si el usuario tiene suficientes puntos para comprar
+        if (thisK.kontagailua >= hobekuntzaObj.kostua) {
+            var ekoizpena = hobekuntzaObj.ekoizpena;
+            
+            // Restar el costo de la mejora de los puntos actuales
+            thisK.kontagailua -= hobekuntzaObj.kostua; 
             point.innerHTML = thisK.kontagailua; 
-               
+
+            // Incrementar la producción
             thisK.ekintza += ekoizpena;
             multiplicador.innerHTML = thisK.ekintza;
-                
+            
+            // Incrementar el costo para la próxima compra
+            hobekuntzaObj.kostua *= hobekuntzaObj.kostuMarginal;
+            
+            // Actualizar el costo mostrado en la interfaz (si es necesario)
+            // document.getElementById('cost-element').innerHTML = hobekuntzaObj.kostua;
+
+            // Establecer un intervalo para añadir la producción periódica
             this.atzekoInterval = setInterval(() => {
-                thisK.actualizarKontagailua(thisK.ekintza); 
+                thisK.kontagailuaEguneratu(thisK.ekintza); 
             }, 1000);
-           
         } else {
-            console.error("Mejora no encontrada");
+            console.log("Puntos insuficientes para comprar " + hobekuntzaObj.izena);
         }
     }
-
-    ze_hobekuntza_da(hobekuntza) {
-        var hobekuntzak = {
-            atzekoAleroia: AtzekoAleroia,
-            aurrekoAleroia: AurrekoAleroia,
-            drs: Drs,
-            gurpila: Erruedak,
-            ers: Ers,
-            kotxea: Kotxea,
-            motorra: Motor
-        };
-
-        return hobekuntzak[hobekuntza] || null;
-    }
 }
+
 
 
 

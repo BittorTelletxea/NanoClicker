@@ -33,25 +33,25 @@ function hobekuntzakOpacity() {
 
 
 atzekoAleroiaElement.addEventListener('click', function() {
-    kontagailu.nanohobekuntzaGehitu("atzekoAleroia");
+    kontagailu.nanohobekuntzaGehitu(atzekoAlero);
 });
 aurrekoAleroiaElement.addEventListener('click', function(){
-    kontagailu.nanohobekuntzaGehitu("aurrekoAleroia");
+    kontagailu.nanohobekuntzaGehitu(aurrekoAlero);
 });
 ruedasElement.addEventListener('click', function(){
-    kontagailu.nanohobekuntzaGehitu("gurpila");
-})
+    kontagailu.nanohobekuntzaGehitu(errueda);
+});
 ersElement.addEventListener('click', function() {
-    kontagailu.nanohobekuntzaGehitu("ers");
+    kontagailu.nanohobekuntzaGehitu(ersa);
 });
 motorraElement.addEventListener('click', function() {
-    kontagailu.nanohobekuntzaGehitu("motorra");
+    kontagailu.nanohobekuntzaGehitu(motor);
 });
 drsElement.addEventListener('click', function() {
-    kontagailu.nanohobekuntzaGehitu("drs");
+    kontagailu.nanohobekuntzaGehitu(drsa);
 });
 kotxeaElement.addEventListener('click', function() {
-    kontagailu.knanohobekuntzaGehitu("kotxea");
+    kontagailu.nanohobekuntzaGehitu(kotxe);
 });
 
 
